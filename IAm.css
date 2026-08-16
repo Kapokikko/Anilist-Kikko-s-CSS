@@ -284,9 +284,9 @@ h2 {
     transition: height 1s ease-in-out;
 }
 
-.banner[data-v-1cc2919e] {
-    background-color: transparent !important;
+.header-wrap > .banner {
     background-image: none !important;
+    background-color: transparent !important;
 }
 
 .banner .container[data-v-1cc2919e] {
