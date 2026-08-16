@@ -1,12 +1,7 @@
-/* ==========================================================================
-   AniList Custom Theme
+/*
+   AniList Theme
    Georganiseerde versie
-   ========================================================================== */
-
-/* ==========================================================================
-   1. THEME VARIABLES
-   Pas vooral deze waarden aan als je snel je kleuren/thema wilt wijzigen.
-   ========================================================================== */
+*/
 
 :root {
     --purple-rgb: 50, 30, 76;
@@ -276,24 +271,22 @@ h2 {
 
 
 /* ==========================================================================
+   /* ==========================================================================
    5. PROFILE BANNER
    ========================================================================== */
 
-.banner:not(.review-card > .banner) {
+.header-wrap > .banner {
     height: 400px;
+    background-image: none !important;
+    background-color: transparent !important;
     transition: height 1s ease-in-out;
 }
 
-.header-wrap > .banner {
-    background-image: none !important;
-    background-color: transparent !important;
-}
-
-.banner .container[data-v-1cc2919e] {
+.header-wrap > .banner .container {
     margin-top: 45px;
 }
 
-.banner-content[data-v-1cc2919e] {
+.header-wrap .banner-content {
     position: relative;
     display: flex;
     flex-direction: column;
@@ -310,80 +303,80 @@ h2 {
         opacity 1s ease;
 }
 
-.banner-content[data-v-1cc2919e]:hover {
+.header-wrap .banner-content:hover {
     height: 320px;
 }
 
-.banner-content[data-v-1cc2919e] > * {
+.header-wrap .banner-content > * {
     transition:
         opacity 0.5s ease,
         transform 0.5s ease;
 }
 
-.banner-content[data-v-1cc2919e] > :nth-last-child(2),
-.banner-content[data-v-1cc2919e] > :last-child {
+.header-wrap .banner-content > :nth-last-child(2),
+.header-wrap .banner-content > :last-child {
     display: inline-block;
 }
 
-.banner-content[data-v-1cc2919e] .avatar[data-v-1cc2919e],
-.banner-content[data-v-1cc2919e] .name-wrapper[data-v-1cc2919e] {
+.header-wrap .banner-content .avatar,
+.header-wrap .banner-content .name-wrapper {
     opacity: 1;
     transform: translateY(0);
 }
 
-.banner-content[data-v-1cc2919e] .follower-badge[data-v-1cc2919e],
-.banner-content[data-v-1cc2919e] .nav-btn[data-v-1cc2919e] {
+.header-wrap .banner-content .follower-badge,
+.header-wrap .banner-content .nav-btn {
     opacity: 0;
     pointer-events: none;
     transform: translateY(20px);
+
     transition:
         opacity 0.5s ease,
         transform 0.5s ease;
 }
 
-.banner-content[data-v-1cc2919e]:hover .follower-badge[data-v-1cc2919e],
-.banner-content[data-v-1cc2919e]:hover .nav-btn[data-v-1cc2919e] {
+.header-wrap .banner-content:hover .follower-badge,
+.header-wrap .banner-content:hover .nav-btn {
     opacity: 1;
     pointer-events: auto;
     transform: translateY(0);
 }
 
-.avatar[data-v-1cc2919e] {
+.header-wrap .banner-content .avatar {
     position: relative;
     max-width: 160px;
     max-height: 160px;
+
     transition:
         max-width 1.5s ease-in-out,
         max-height 1s ease-in-out;
 }
 
-.actions[data-v-1cc2919e] {
+.header-wrap .banner-content .actions {
     margin-left: 32px;
     transition: padding-top 1.5s ease-in-out;
 }
 
-.nav-btn[data-v-1cc2919e],
-.follower-badge[data-v-1cc2919e] {
+.header-wrap .banner-content .nav-btn,
+.header-wrap .banner-content .follower-badge {
     margin-left: 0;
     color: var(--text);
     background-color: var(--accent-80);
 }
 
-.nav-btn[data-v-1cc2919e]:hover {
+.header-wrap .banner-content .nav-btn:hover {
     color: var(--text);
     background-color: var(--accent-90);
 }
 
-.follower-badge[data-v-1cc2919e]:hover {
+.header-wrap .banner-content .follower-badge:hover {
     background-color: var(--accent-95);
 }
 
-.mod-badge-wrap[data-v-1cc2919e] {
+.header-wrap .banner-content .mod-badge-wrap {
     margin-right: 0;
     margin-bottom: 0;
 }
-
-
 /* ==========================================================================
    6. PROFILE OVERVIEW / ABOUT
    ========================================================================== */
